@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 골프학부 2학기 MT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .golf-gradient { background: linear-gradient(135deg, #1a4d2e 0%, #4ade80 100%); }
+        .timeline-line { position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background-color: #e5e7eb; z-index: 0; }
+        .active-tab { border-bottom: 3px solid #15803d; color: #15803d; font-weight: bold; }
+        .inactive-tab { color: #6b7280; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="golf-gradient text-white p-8 text-center shadow-lg rounded-b-3xl relative z-10">
+        <div class="mb-2 text-sm opacity-90">2024 골프학부 2학기 MT</div>
+        <h1 class="text-3xl font-black mb-2">선후배 대통합<br>& 미리 메리 크리스마스</h1>
+        <p class="text-sm font-medium"><i class="fas fa-calendar-check mr-1"></i> 12월 5일(금) ~ 6일(토)</p>
+    </header>
+
+    <div class="flex justify-center bg-white shadow-sm sticky top-0 z-20">
+        <button onclick="showDay(1)" id="btn-day1" class="flex-1 py-4 text-center active-tab transition-all">
+            Day 1 (금)
+        </button>
+        <button onclick="showDay(2)" id="btn-day2" class="flex-1 py-4 text-center inactive-tab transition-all">
+            Day 2 (토)
+        </button>
+    </div>
+
+    <main class="max-w-md mx-auto p-6">
+        
+        <div id="day1" class="relative">
+            <div class="timeline-line"></div>
+            
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-bus text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">14:00 - 15:00</span>
+                <h3 class="text-lg font-bold mt-1">집결 및 숙소 도착</h3>
+                <p class="text-sm text-gray-500 mt-1">인원 체크, 방 배정, 짐 풀기</p>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-volleyball-ball text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">15:00 - 16:30</span>
+                <h3 class="text-lg font-bold mt-1">[몸 풀기] 왕피구 대전</h3>
+                <p class="text-sm text-gray-500 mt-1">학번 대항전 or 팀 대항전<br><span class="text-xs text-red-400">*야외 운동장 (추울 시 실내 대체)</span></p>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-handshake text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">16:30 - 17:30</span>
+                <h3 class="text-lg font-bold mt-1">[아이스브레이킹] 조 이름 정하기</h3>
+                <p class="text-sm text-gray-500 mt-1">미션: 우리 조만의 기발한 구호/이름<br><span class="text-xs bg-yellow-100 px-1 rounded">1등 조 전원 기프티콘 증정!</span></p>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-drumstick-bite text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">17:30 - 19:30</span>
+                <h3 class="text-lg font-bold mt-1">바비큐 파티</h3>
+                <p class="text-sm text-gray-500 mt-1">조별 고기 굽기 & 저녁 식사<br>친해지는 시간 🍖</p>
+            </div>
+            
+             <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-coffee text-gray-500 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-gray-600">19:30 - 20:00</span>
+                <h3 class="text-lg font-bold mt-1">휴식 및 세팅</h3>
+                <p class="text-sm text-gray-500 mt-1">레크리에이션 준비</p>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-brain text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">20:00 - 20:40</span>
+                <h3 class="text-lg font-bold mt-1">[레크 1부] 뇌풀기 퀴즈</h3>
+                <ul class="text-sm text-gray-500 mt-2 list-disc list-inside space-y-1">
+                    <li><strong class="text-green-700">O.X 게임:</strong> 박하람 해병대설, 안성재 셰프 아니고 임성재 프로?</li>
+                    <li><strong class="text-green-700">인물 퀴즈:</strong> 허석호 교수님 애교 사진 필수!</li>
+                    <li><strong class="text-green-700">절대음감:</strong> 슈슈슈슈퍼노바, 알리얄리얄라셩</li>
+                </ul>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-music text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">20:40 - 21:30</span>
+                <h3 class="text-lg font-bold mt-1">[레크 2부] 흥 폭발 게임</h3>
+                <ul class="text-sm text-gray-500 mt-2 list-disc list-inside space-y-1">
+                    <li>노래 맞히기 (전주 듣고 맞히기)</li>
+                    <li>양세찬 게임</li>
+                </ul>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-users text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">21:30 - 22:10</span>
+                <h3 class="text-lg font-bold mt-1">[레크 3부] 팀워크 게임</h3>
+                <p class="text-sm text-gray-500 mt-1">이마에 제시어 붙이고 질문으로 맞히기</p>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-microphone-alt text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">22:10 - 23:30</span>
+                <h3 class="text-lg font-bold mt-1">장기자랑 & 시상식</h3>
+                <p class="text-sm text-gray-500 mt-1">끼 있는 학우들의 무대<br>행운권 추첨 (하이라이트 ✨)</p>
+            </div>
+
+             <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-beer text-white text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-gray-600">23:30 ~</span>
+                <h3 class="text-lg font-bold mt-1">뒤풀이 (자유시간)</h3>
+                <p class="text-sm text-gray-500 mt-1">조별/학번별 담소 (안전 관리 필수)</p>
+            </div>
+        </div>
+
+        <div id="day2" class="hidden relative">
+            <div class="timeline-line"></div>
+            
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-sun text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">09:00 - 10:00</span>
+                <h3 class="text-lg font-bold mt-1">기상 및 아침 식사</h3>
+                <p class="text-sm text-gray-500 mt-1">해장 라면 등</p>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-broom text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">10:00 - 11:00</span>
+                <h3 class="text-lg font-bold mt-1">정리 정돈 및 퇴실 점검</h3>
+                <p class="text-sm text-gray-500 mt-1">"머물던 자리는 아름답게"</p>
+            </div>
+
+            <div class="relative mb-8 pl-10">
+                <div class="absolute left-2 top-1 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10 transform -translate-x-1/2">
+                    <i class="fas fa-camera text-green-700 text-xs"></i>
+                </div>
+                <span class="text-sm font-bold text-green-700">11:00 ~</span>
+                <h3 class="text-lg font-bold mt-1">단체 사진 & 귀가</h3>
+                <p class="text-sm text-gray-500 mt-1">기념 촬영 후 해산</p>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-white p-5 rounded-xl shadow-md border border-green-100">
+            <h3 class="font-bold text-green-800 mb-3"><i class="fas fa-check-circle text-green-500 mr-2"></i>진행 체크리스트</h3>
+            <ul class="text-xs text-gray-600 space-y-2">
+                <li>• <span class="font-bold">O.X 팩트체크:</span> 이재웅 회장님 투어프로 자격증, 허석호 교수님 SBS 아카데미 등은 사전에 꼭 확인!</li>
+                <li>• <span class="font-bold">민감 질문 주의:</span> "박하람 이상형", "우혜원 결혼" 등은 유쾌하게 포장 필수.</li>
+                <li>• <span class="font-bold">사진 준비:</span> 교수님 '반전 매력' 사진, 박세리/임성재 등 골프 스타 사진 적절히 섞기.</li>
+                <li>• <span class="font-bold">방한 대책:</span> 야외 왕피구 시 핫팩 준비 필수! (너무 추우면 실내 '몸으로 말해요'로 대체)</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="text-center p-6 text-xs text-gray-400">
+        &copy; 2024 Golf Department Student Council
+    </footer>
+
+    <script>
+        function showDay(day) {
+            const day1Content = document.getElementById('day1');
+            const day2Content = document.getElementById('day2');
+            const btnDay1 = document.getElementById('btn-day1');
+            const btnDay2 = document.getElementById('btn-day2');
+
+            if (day === 1) {
+                day1Content.classList.remove('hidden');
+                day2Content.classList.add('hidden');
+                btnDay1.className = "flex-1 py-4 text-center active-tab transition-all";
+                btnDay2.className = "flex-1 py-4 text-center inactive-tab transition-all";
+            } else {
+                day1Content.classList.add('hidden');
+                day2Content.classList.remove('hidden');
+                btnDay1.className = "flex-1 py-4 text-center inactive-tab transition-all";
+                btnDay2.className = "flex-1 py-4 text-center active-tab transition-all";
+            }
+        }
+    </script>
+</body>
+</html>
